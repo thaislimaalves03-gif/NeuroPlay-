@@ -1,0 +1,120 @@
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family:sans-serif; }
+
+/* Fundo animado */
+canvas#fundo {
+  position: fixed;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+/* App container */
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+}
+
+/* Barra de pesquisa */
+#topo {
+  padding:10px;
+  background: rgba(0,0,0,0.5);
+}
+
+#topo input {
+  width: 100%;
+  padding:10px;
+  border-radius:5px;
+  border:none;
+  font-size:16px;
+}
+
+/* Conteúdo principal */
+#conteudo {
+  display:flex;
+  flex:1;
+  overflow:hidden;
+}
+
+/* Fila lateral */
+#fila-filmes {
+  width: 200px;
+  background: rgba(0,0,0,0.5);
+  overflow-y:auto;
+  padding:10px;
+}
+
+.filme-item {
+  padding:5px;
+  margin-bottom:5px;
+  cursor:pointer;
+  background: rgba(255,255,255,0.1);
+  border-radius:5px;
+}
+
+/* Player principal */
+#player {
+  flex:1;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+#player video {
+  width:80%;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+/* Painel admin */
+#painel-admin {
+  width:200px;
+  background: rgba(0,0,0,0.7);
+  padding:10px;
+  overflow-y:auto;
+}
+
+#painel-admin h3 {
+  margin-bottom:10px;
+}
+
+.botao-admin {
+  display:block;
+  margin:5px 0;
+  padding:5px;
+  background:#ff5555;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  color:#fff;
+}
+
+/* Formulário adicionar filme */
+#adicionar-filme {
+  padding:10px;
+  background: rgba(0,0,0,0.5);
+  display:flex;
+  gap:5px;
+}
+
+#adicionar-filme input {
+  padding:5px;
+  border-radius:5px;
+  border:none;
+  flex:1;
+}
+
+#adicionar-filme button {
+  padding:5px 10px;
+  border-radius:5px;
+  border:none;
+  background:#55ff55;
+  cursor:pointer;
+  color:#000;
+}
